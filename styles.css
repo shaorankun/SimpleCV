@@ -1,0 +1,100 @@
+    @charset "utf-8";
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: lightcyan;
+        font-size: 14px;
+    }
+
+.title h1 {
+    text-align: center;
+    color: cornflowerblue;
+}
+.title h2 {
+    text-align: center;
+    color: darkblue;
+}
+.title h3 {
+    text-align: center;
+    color: darkblue;
+}
+
+.boxes {
+    display: flex;
+    gap: 5px;
+}
+
+.boxes span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #1aa3a3;
+    border-radius: 2px;
+}
+
+.filled {
+    background-color: #1aa3a3;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill p {
+    margin: 0 0 0 0;
+    font-weight: bold;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px 40px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+button {
+    display: block;
+    margin-top: 30px;
+    margin-left: 660px;
+    background-color: #1aa3a3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+    max-width: 90%;
+}
+
+button:hover {
+    background-color: #148080;
+}
+
+.sidebar {
+    width: auto;
+    background: #111;
+    /*background-color: transparent;*/
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 300px;
+}
+
+.sidebar a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: teal;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#Profile">Profile</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Skill">Skill</a>
+    </div>
+
+<section id="Profile">
+    <div class="title">
+    <h1>Le Anh Tuan</h1>
+    <h3>Student of University of Information Technology (UIT)</h3>
+    </div>
+    <hr>
+
+    <div style="display: flex;">
+        <img src="https://i.ibb.co/9mxh8VJ/2.png" alt="Le Anh Tuan" style="float:left; margin-right: 10px;" />
+        <div style="border-left: 1px solid black; height: auto; margin: 0 10px;"></div>
+        <div style="padding-left: 10px; padding-right: 10px;">
+        <h2>About me</h2>
+            <p>A third year student in UIT</p>
+            <p>Currently major in Information System (IS)</p>
+            <p>I started studying at university on September 15, 2023</p>
+            <p>Visit my school <a href="https://www.uit.edu.vn/" target="_blank">webpage</a> now for information</p>
+        </div>
+    </div>
+</section>
+
+    <section id="Experience">
+    <div class="title">
+        <h1>Experiences</h1>
+    </div>
+    <hr>
+    <h2 style="color: darkblue; margin-left: 100px;">Education</h2>
+    <img src="uit.png" style="float:left; margin-right: 10px; width:300px;" />
+    <div style="margin-left: 500px">
+        <h3 style="color: darkblue">Information System</h3>
+        <p>The <b>Information Systems (IS)</b> major at the <b>University of Information Technology (UIT)</b> equips students with both technical and business skills to design and manage systems that support decision-making and organizational efficiency. The program covers areas such as <b>database management, data analytics, system analysis, and IT project management</b>, helping students understand how technology can solve real business problems. Graduates are prepared for roles like <b>system analysts, IT consultants, and data specialists</b>, bridging the gap between business needs and technological solutions.</p>
+    </div>
+    </section>
+
+    <section id="Skill">
+    <div class="title", style="margin-top: 100px">
+        <h1>Skills</h1>
+    </div>
+    <hr>
+
+    <div class="skills", style="margin-left: 380px; margin-top: 30px">
+        <div class="skill">
+            <p>HTML</p>
+            <div class="boxes">
+            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="boxes">
+            <span class="filled"></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Javascript</p>
+            <div class="boxes">
+                <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>OOP</p>
+            <div class="boxes">
+                <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
+            </div>
+        </div>
+    </div>
+    <div class="skills" style="text-align: center">
+    <button onclick="window.open('https://github.com/shaorankun', '_blank')" style="text-align: center" >
+        See project on GitHub
+    </button>
+    </div>
+    </section>
+
+    <script>
+    document.querySelectorAll('.sidebar a').forEach(link => {
+    link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+    behavior: 'smooth'
+    });
+    });
+    });
+    </script>
+
+</body>
+</html>
