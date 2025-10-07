@@ -1,18 +1,20 @@
-    @charset "utf-8";
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: lightcyan;
-        font-size: 14px;
-    }
+@charset "utf-8";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightcyan;
+    font-size: 14px;
+}
 
 .title h1 {
     text-align: center;
     color: cornflowerblue;
 }
+
 .title h2 {
     text-align: center;
     color: darkblue;
 }
+
 .title h3 {
     text-align: center;
     color: darkblue;
